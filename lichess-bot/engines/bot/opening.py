@@ -24,6 +24,7 @@ def check_opening(chess_openings, board, new_board, next_opening_moves):
 
     return next_opening_moves
 
+
 def play_opening(board):
     next_opening_moves = []
 
@@ -34,24 +35,25 @@ def play_opening(board):
     new_board = chess.Board()
 
     # Get the current directory of game.py
-    current_directory = os.path.dirname(os.path.abspath(__file__))
+    # current_directory = os.path.dirname(os.path.abspath(__file__))
 
     # Define the file path relative to the current directory
     # file_path = os.path.join(current_directory, 'openings.csv')
-    file_path = os.path.join(current_directory, 'openings.csv')
+    # file_path = os.path.join(current_directory, 'openings.csv')
 
     # Get all of the SAN notations
     # Первый датасет с дебютами
-    chess_openings = pd.read_csv(file_path)
-    chess_openings = chess_openings["moves"].tolist()
+    # chess_openings = pd.read_csv(file_path)
+    # chess_openings = chess_openings["moves"].tolist()
+    #
+    # check_opening(chess_openings, board, new_board, next_opening_moves)
+    # if next_opening_moves:
+    #     print(1)
+    #     random_opening_from_array = random.choice(next_opening_moves)
+    #
+    #     return random_opening_from_array
 
-    check_opening(chess_openings, board, new_board, next_opening_moves)
-    if next_opening_moves:
-        print(1)
-        random_opening_from_array = random.choice(next_opening_moves)
-
-        return random_opening_from_array
-
+    chess_openings = []
     # Второй датасет с дебютами
     with open(r"C:\Users\nikan\Desktop\Chess_bot\lichess-bot\engines\bot\high_elo_opening_result.txt", "r") as g:
         for i in g.readlines():
@@ -59,7 +61,6 @@ def play_opening(board):
 
     check_opening(chess_openings, board, new_board, next_opening_moves)
     if next_opening_moves:
-        print(2)
         random_opening_from_array = random.choice(next_opening_moves)
 
         return random_opening_from_array
