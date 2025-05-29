@@ -12,7 +12,7 @@ def get_move(board, depth):
         print("PLAYING OPENING MOVE: ", opening_move)
         return opening_move
 
-    top_move = None;
+    top_move = None
 
     # Opposite of our minimax
     if board.turn == chess.WHITE:

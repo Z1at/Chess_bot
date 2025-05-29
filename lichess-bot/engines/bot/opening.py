@@ -6,7 +6,7 @@ import os
 
 
 def play_opening(board):
-    next_opening_moves = [];
+    next_opening_moves = []
 
     # If we go first, we just play e4
     if board.turn == chess.WHITE and board.fullmove_number == 1:
@@ -29,7 +29,7 @@ def play_opening(board):
     # If it "contains" the same board position as our current board
     # Return it's next move
     for opening in chess_openings:
-        moves_in_openings = opening.split();
+        moves_in_openings = opening.split()
 
         for index, move in enumerate(moves_in_openings):
             try:
@@ -39,7 +39,7 @@ def play_opening(board):
                     next_move = board.parse_san(moves_in_openings[index + 1]).uci()
                     next_opening_moves.append(next_move)
             except:
-                break;
+                break
 
 
         new_board.reset()

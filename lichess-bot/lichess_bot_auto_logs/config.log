@@ -4,7 +4,7 @@ url: https://lichess.org/
 engine:
   dir: ./engines/
   name: PyBot
-  working_dir: C:\Users\Zlat\Desktop\Chess_bot\lichess-bot
+  working_dir: C:\Users\nikan\Desktop\Chess_bot\lichess-bot
   protocol: homemade
   ponder: true
   polyglot:

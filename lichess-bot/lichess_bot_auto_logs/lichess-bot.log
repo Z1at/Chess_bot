@@ -1876,3 +1876,1595 @@ wheel==0.41.2
 2025-05-28 23:47:07,186 lib.lichess_bot (lichess_bot.py:320) INFO +++ Process Freed. Count: 0. IDs: None
 2025-05-28 23:49:44,441 lib.lichess_bot (lichess_bot.py:447) DEBUG Event: {'type': 'correspondence_ping'}
 2025-05-28 23:54:44,442 lib.lichess_bot (lichess_bot.py:447) DEBUG Event: {'type': 'correspondence_ping'}
+2025-05-29 19:15:50,470 lib.lichess_bot (lichess_bot.py:1174) INFO 
+    .   _/|
+    .  // o\
+    .  || ._)  lichess-bot 2025.5.7.1 on Windows 10
+    .  //__\
+    .  )___(   Play on Lichess with a bot
+    
+2025-05-29 19:15:50,516 lib.config (config.py:283) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: PyBot
+  working_dir: ''
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: .inf
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  - correspondence
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  max_simultaneous_games_per_user: 5
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+
+2025-05-29 19:15:50,516 lib.config (config.py:284) DEBUG ====================
+2025-05-29 19:15:50,526 lib.config (config.py:283) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: PyBot
+  working_dir: C:\Users\nikan\Desktop\Chess_bot\lichess-bot
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+    max_depth: .inf
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+  interpreter: null
+  interpreter_options: []
+  uci_ponder: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+  uci_ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: .inf
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  - correspondence
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  max_simultaneous_games_per_user: 5
+  block_list: []
+  online_block_list: []
+  allow_list: []
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+  block_list: []
+  online_block_list: []
+  challenge_days:
+  - null
+  opponent_min_rating: 600
+  opponent_max_rating: 4000
+  overrides: {}
+pgn_directory: null
+pgn_file_grouping: game
+
+2025-05-29 19:15:50,526 lib.config (config.py:284) DEBUG ====================
+2025-05-29 19:15:50,538 lib.lichess_bot (lichess_bot.py:1180) INFO Checking engine configuration ...
+2025-05-29 19:15:50,561 lib.lichess_bot (lichess_bot.py:1255) ERROR Quitting lichess-bot due to an error:
+Traceback (most recent call last):
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\lichess_bot.py", line 1246, in start_program
+    start_lichess_bot()
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\lichess_bot.py", line 1181, in start_lichess_bot
+    with engine_wrapper.create_engine(CONFIG):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\engine_wrapper.py", line 64, in create_engine
+    Engine = get_homemade_engine(cfg.name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\engine_wrapper.py", line 625, in get_homemade_engine
+    import homemade
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\homemade.py", line 12, in <module>
+    from engines.bot.main import get_move
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\engines\bot\main.py", line 2, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+2025-05-29 19:17:35,724 lib.lichess_bot (lichess_bot.py:1174) INFO 
+    .   _/|
+    .  // o\
+    .  || ._)  lichess-bot 2025.5.7.1 on Windows 10
+    .  //__\
+    .  )___(   Play on Lichess with a bot
+    
+2025-05-29 19:17:35,770 lib.config (config.py:283) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: PyBot
+  working_dir: ''
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: .inf
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  - correspondence
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  max_simultaneous_games_per_user: 5
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+
+2025-05-29 19:17:35,771 lib.config (config.py:284) DEBUG ====================
+2025-05-29 19:17:35,781 lib.config (config.py:283) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: PyBot
+  working_dir: C:\Users\nikan\Desktop\Chess_bot\lichess-bot
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+    max_depth: .inf
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+  interpreter: null
+  interpreter_options: []
+  uci_ponder: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+  uci_ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: .inf
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  - correspondence
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  max_simultaneous_games_per_user: 5
+  block_list: []
+  online_block_list: []
+  allow_list: []
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+  block_list: []
+  online_block_list: []
+  challenge_days:
+  - null
+  opponent_min_rating: 600
+  opponent_max_rating: 4000
+  overrides: {}
+pgn_directory: null
+pgn_file_grouping: game
+
+2025-05-29 19:17:35,782 lib.config (config.py:284) DEBUG ====================
+2025-05-29 19:17:35,792 lib.lichess_bot (lichess_bot.py:1180) INFO Checking engine configuration ...
+2025-05-29 19:17:36,022 lib.lichess_bot (lichess_bot.py:1255) ERROR Quitting lichess-bot due to an error:
+Traceback (most recent call last):
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\lichess_bot.py", line 1246, in start_program
+    start_lichess_bot()
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\lichess_bot.py", line 1181, in start_lichess_bot
+    with engine_wrapper.create_engine(CONFIG):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\engine_wrapper.py", line 64, in create_engine
+    Engine = get_homemade_engine(cfg.name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\engine_wrapper.py", line 625, in get_homemade_engine
+    import homemade
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\homemade.py", line 12, in <module>
+    from engines.bot.main import get_move
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\engines\bot\main.py", line 4, in <module>
+    from .opening import play_opening
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\engines\bot\opening.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+2025-05-29 19:19:34,522 lib.lichess_bot (lichess_bot.py:1174) INFO 
+    .   _/|
+    .  // o\
+    .  || ._)  lichess-bot 2025.5.7.1 on Windows 10
+    .  //__\
+    .  )___(   Play on Lichess with a bot
+    
+2025-05-29 19:19:34,604 lib.config (config.py:283) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: PyBot
+  working_dir: ''
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: .inf
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  - correspondence
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  max_simultaneous_games_per_user: 5
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+
+2025-05-29 19:19:34,605 lib.config (config.py:284) DEBUG ====================
+2025-05-29 19:19:34,614 lib.config (config.py:283) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: PyBot
+  working_dir: C:\Users\nikan\Desktop\Chess_bot\lichess-bot
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+    max_depth: .inf
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+  interpreter: null
+  interpreter_options: []
+  uci_ponder: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+  uci_ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: .inf
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  - correspondence
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  max_simultaneous_games_per_user: 5
+  block_list: []
+  online_block_list: []
+  allow_list: []
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+  block_list: []
+  online_block_list: []
+  challenge_days:
+  - null
+  opponent_min_rating: 600
+  opponent_max_rating: 4000
+  overrides: {}
+pgn_directory: null
+pgn_file_grouping: game
+
+2025-05-29 19:19:34,614 lib.config (config.py:284) DEBUG ====================
+2025-05-29 19:19:34,626 lib.lichess_bot (lichess_bot.py:1180) INFO Checking engine configuration ...
+2025-05-29 19:19:35,723 lib.engine_wrapper (engine_wrapper.py:69) DEBUG Starting engine: ['C:\\Users\\nikan\\Desktop\\Chess_bot\\lichess-bot\\engines\\PyBot']
+2025-05-29 19:19:35,723 lib.lichess_bot (lichess_bot.py:1183) INFO Engine configuration OK
+2025-05-29 19:19:35,725 lib.lichess_bot (lichess_bot.py:1153) DEBUG Python version: 3.12.3.final.0
+2025-05-29 19:19:35,808 lib.lichess_bot (lichess_bot.py:1159) DEBUG Installed libraries:
+attrs==25.2.0
+backoff==2.2.1
+blinker==1.9.0
+certifi==2025.1.31
+cffi==1.17.1
+charset-normalizer==3.4.2
+chess==1.11.2
+click==8.2.1
+colorama==0.4.6
+Flask==3.1.1
+Flask-SQLAlchemy==3.1.1
+greenlet==3.2.2
+h11==0.14.0
+idna==3.10
+itsdangerous==2.2.0
+Jinja2==3.1.6
+markdown-it-py==3.0.0
+MarkupSafe==3.0.2
+mdurl==0.1.2
+numpy==2.2.6
+outcome==1.3.0.post0
+pandas==2.2.3
+pip==24.0
+pycparser==2.22
+Pygments==2.19.1
+PySocks==1.7.1
+python-dateutil==2.9.0.post0
+pytz==2025.2
+PyYAML==6.0.2
+requests==2.32.3
+rich==14.0.0
+selenium==4.29.0
+six==1.17.0
+sniffio==1.3.1
+sortedcontainers==2.4.0
+SQLAlchemy==2.0.41
+trio==0.29.0
+trio-websocket==0.12.2
+typing_extensions==4.12.2
+tzdata==2025.2
+urllib3==2.3.0
+websocket-client==1.8.0
+Werkzeug==3.1.3
+wsproto==1.2.0
+
+
+2025-05-29 19:19:35,811 urllib3.connectionpool (connectionpool.py:1049) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2025-05-29 19:19:36,931 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 9
+2025-05-29 19:19:36,932 lib.lichess_bot (lichess_bot.py:1255) ERROR Quitting lichess-bot due to an error:
+Traceback (most recent call last):
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\lichess_bot.py", line 1246, in start_program
+    start_lichess_bot()
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\lichess_bot.py", line 1188, in start_lichess_bot
+    li = lichess.Lichess(CONFIG.token, CONFIG.url, __version__, logging_level, max_retries)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikan\Desktop\Chess_bot\lichess-bot\lib\lichess.py", line 115, in __init__
+    raise RuntimeError("Token in config file is not recognized by lichess. "
+RuntimeError: Token in config file is not recognized by lichess. Please check that it was copied correctly into your configuration file.
+2025-05-29 19:20:03,763 lib.lichess_bot (lichess_bot.py:1174) INFO 
+    .   _/|
+    .  // o\
+    .  || ._)  lichess-bot 2025.5.7.1 on Windows 10
+    .  //__\
+    .  )___(   Play on Lichess with a bot
+    
+2025-05-29 19:20:03,830 lib.config (config.py:283) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: PyBot
+  working_dir: ''
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: .inf
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  - correspondence
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  max_simultaneous_games_per_user: 5
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+
+2025-05-29 19:20:03,831 lib.config (config.py:284) DEBUG ====================
+2025-05-29 19:20:03,848 lib.config (config.py:283) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: PyBot
+  working_dir: C:\Users\nikan\Desktop\Chess_bot\lichess-bot
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+    max_depth: .inf
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+  interpreter: null
+  interpreter_options: []
+  uci_ponder: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+  uci_ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  preference: none
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: .inf
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  - correspondence
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  max_simultaneous_games_per_user: 5
+  block_list: []
+  online_block_list: []
+  allow_list: []
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  challenge_mode: random
+  challenge_filter: none
+  include_challenge_block_list: false
+  block_list: []
+  online_block_list: []
+  challenge_days:
+  - null
+  opponent_min_rating: 600
+  opponent_max_rating: 4000
+  overrides: {}
+pgn_directory: null
+pgn_file_grouping: game
+
+2025-05-29 19:20:03,849 lib.config (config.py:284) DEBUG ====================
+2025-05-29 19:20:03,863 lib.lichess_bot (lichess_bot.py:1180) INFO Checking engine configuration ...
+2025-05-29 19:20:04,902 lib.engine_wrapper (engine_wrapper.py:69) DEBUG Starting engine: ['C:\\Users\\nikan\\Desktop\\Chess_bot\\lichess-bot\\engines\\PyBot']
+2025-05-29 19:20:04,903 lib.lichess_bot (lichess_bot.py:1183) INFO Engine configuration OK
+2025-05-29 19:20:04,908 lib.lichess_bot (lichess_bot.py:1153) DEBUG Python version: 3.12.3.final.0
+2025-05-29 19:20:05,074 lib.lichess_bot (lichess_bot.py:1159) DEBUG Installed libraries:
+attrs==25.2.0
+backoff==2.2.1
+blinker==1.9.0
+certifi==2025.1.31
+cffi==1.17.1
+charset-normalizer==3.4.2
+chess==1.11.2
+click==8.2.1
+colorama==0.4.6
+Flask==3.1.1
+Flask-SQLAlchemy==3.1.1
+greenlet==3.2.2
+h11==0.14.0
+idna==3.10
+itsdangerous==2.2.0
+Jinja2==3.1.6
+markdown-it-py==3.0.0
+MarkupSafe==3.0.2
+mdurl==0.1.2
+numpy==2.2.6
+outcome==1.3.0.post0
+pandas==2.2.3
+pip==24.0
+pycparser==2.22
+Pygments==2.19.1
+PySocks==1.7.1
+python-dateutil==2.9.0.post0
+pytz==2025.2
+PyYAML==6.0.2
+requests==2.32.3
+rich==14.0.0
+selenium==4.29.0
+six==1.17.0
+sniffio==1.3.1
+sortedcontainers==2.4.0
+SQLAlchemy==2.0.41
+trio==0.29.0
+trio-websocket==0.12.2
+typing_extensions==4.12.2
+tzdata==2025.2
+urllib3==2.3.0
+websocket-client==1.8.0
+Werkzeug==3.1.3
+wsproto==1.2.0
+
+
+2025-05-29 19:20:05,080 urllib3.connectionpool (connectionpool.py:1049) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2025-05-29 19:20:05,331 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
+2025-05-29 19:20:05,387 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
+2025-05-29 19:20:05,389 lib.lichess_bot (lichess_bot.py:1193) INFO Welcome el_macho_bot!
+2025-05-29 19:20:05,392 lib.lichess_bot (lichess_bot.py:260) INFO You're now connected to https://lichess.org/ and awaiting challenges.
+2025-05-29 19:20:08,754 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
+2025-05-29 19:20:32,126 lib.lichess_bot (lichess_bot.py:447) DEBUG Event: {'type': 'challenge', 'challenge': {'id': 'Cn066UHU', 'url': 'https://lichess.org/Cn066UHU', 'status': 'created', 'challenger': {'id': 'el_macho', 'name': 'El_Macho', 'rating': 1682, 'title': None, 'online': True, 'lag': 4}, 'destUser': {'id': 'el_macho_bot', 'name': 'el_macho_bot', 'rating': 2000, 'title': 'BOT', 'provisional': True, 'online': True}, 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'rated': False, 'speed': 'blitz', 'timeControl': {'type': 'clock', 'limit': 180, 'increment': 2, 'show': '3+2'}, 'color': 'random', 'finalColor': 'black', 'perf': {'icon': '\ue008', 'name': 'Blitz'}}, 'compat': {'bot': True, 'board': True}}
+2025-05-29 19:20:32,131 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:20:32,488 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
+2025-05-29 19:20:32,492 lib.lichess_bot (lichess_bot.py:498) INFO Accept Blitz casual challenge from El_Macho (1682) (Cn066UHU)
+2025-05-29 19:20:32,567 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/challenge/Cn066UHU/accept HTTP/1.1" 200 11
+2025-05-29 19:20:32,571 lib.lichess_bot (lichess_bot.py:320) INFO --- Process Queued. Count: 1. IDs: {'Cn066UHU'}
+2025-05-29 19:20:32,576 lib.lichess_bot (lichess_bot.py:447) DEBUG Event: {'type': 'gameStart', 'game': {'fullId': 'Cn066UHUqRtW', 'gameId': 'Cn066UHU', 'fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1', 'color': 'white', 'lastMove': '', 'source': 'friend', 'status': {'id': 20, 'name': 'started'}, 'variant': {'key': 'standard', 'name': 'Standard'}, 'speed': 'blitz', 'perf': 'blitz', 'rated': False, 'hasMoved': False, 'opponent': {'id': 'el_macho', 'username': 'El_Macho', 'rating': 1682}, 'isMyTurn': True, 'secondsLeft': 180, 'compat': {'bot': True, 'board': True}, 'id': 'Cn066UHU'}}
+2025-05-29 19:20:32,576 lib.lichess_bot (lichess_bot.py:320) INFO --- Process Used. Count: 1. IDs: {'Cn066UHU'}
+2025-05-29 19:20:32,644 urllib3.connectionpool (connectionpool.py:1049) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2025-05-29 19:20:33,274 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "GET /api/bot/game/stream/Cn066UHU HTTP/1.1" 200 None
+2025-05-29 19:20:33,275 lib.lichess_bot (lichess_bot.py:655) DEBUG Initial state: {'id': 'Cn066UHU', 'variant': {'key': 'standard', 'name': 'Standard', 'short': 'Std'}, 'speed': 'blitz', 'perf': {'name': 'Blitz'}, 'rated': False, 'createdAt': 1748535638196, 'white': {'id': 'el_macho_bot', 'name': 'el_macho_bot', 'title': 'BOT', 'rating': 2000, 'provisional': True}, 'black': {'id': 'el_macho', 'name': 'El_Macho', 'title': None, 'rating': 1682}, 'initialFen': 'startpos', 'clock': {'initial': 180000, 'increment': 2000}, 'type': 'gameFull', 'state': {'type': 'gameState', 'moves': '', 'wtime': 180000, 'btime': 180000, 'winc': 2000, 'binc': 2000, 'status': 'started'}}
+2025-05-29 19:20:34,823 lib.engine_wrapper (engine_wrapper.py:69) DEBUG Starting engine: ['C:\\Users\\nikan\\Desktop\\Chess_bot\\lichess-bot\\engines\\PyBot']
+2025-05-29 19:20:34,823 lib.lichess_bot (lichess_bot.py:661) DEBUG The engine for game Cn066UHU has pid=?
+2025-05-29 19:20:34,824 lib.lichess_bot (lichess_bot.py:664) INFO +++ https://lichess.org/Cn066UHU/white Blitz vs El_Macho (1682) (Cn066UHU)
+2025-05-29 19:20:34,825 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': '', 'wtime': 180000, 'btime': 180000, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:34,825 lib.conversation (conversation.py:99) INFO *** https://lichess.org/Cn066UHU/white [player] el_macho_bot: Hi! I'm el_macho_bot. Good luck! Type !help for a list of commands I can respond to.
+2025-05-29 19:20:34,827 urllib3.connectionpool (connectionpool.py:1049) DEBUG Starting new HTTPS connection (2): lichess.org:443
+2025-05-29 19:20:34,989 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/chat HTTP/1.1" 200 11
+2025-05-29 19:20:34,991 lib.conversation (conversation.py:99) INFO *** https://lichess.org/Cn066UHU/white [spectator] el_macho_bot: Hi! I'm el_macho_bot. Type !help for a list of commands I can respond to.
+2025-05-29 19:20:35,044 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/chat HTTP/1.1" 200 11
+2025-05-29 19:20:35,047 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:20:35,048 lib.lichess_bot (lichess_bot.py:818) INFO move: 1
+2025-05-29 19:20:35,049 lib.engine_wrapper (engine_wrapper.py:700) INFO Searching for time 10 seconds for game Cn066UHU
+2025-05-29 19:20:36,125 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:20:36,178 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/e2e4?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:20:36,180 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'chatLine', 'room': 'player', 'username': 'el_macho_bot', 'text': "Hi! I'm el_macho_bot. Good luck! Type !help for a list of commands I can respond to."}
+2025-05-29 19:20:36,181 lib.conversation (conversation.py:57) INFO *** https://lichess.org/Cn066UHU/white [player] el_macho_bot: Hi! I'm el_macho_bot. Good luck! Type !help for a list of commands I can respond to.
+2025-05-29 19:20:36,182 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'chatLine', 'room': 'spectator', 'username': 'el_macho_bot', 'text': "Hi! I'm el_macho_bot. Type !help for a list of commands I can respond to."}
+2025-05-29 19:20:36,184 lib.conversation (conversation.py:57) INFO *** https://lichess.org/Cn066UHU/white [spectator] el_macho_bot: Hi! I'm el_macho_bot. Type !help for a list of commands I can respond to.
+2025-05-29 19:20:36,185 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4', 'wtime': 180000, 'btime': 180000, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:37,394 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5', 'wtime': 180000, 'btime': 180000, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:37,395 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:20:37,397 lib.lichess_bot (lichess_bot.py:818) INFO move: 2
+2025-05-29 19:20:37,398 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 177997 btime 180000 for game Cn066UHU
+2025-05-29 19:20:38,347 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:20:38,627 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/g1f3?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:20:38,629 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3', 'wtime': 180990, 'btime': 180000, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:43,421 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6', 'wtime': 180990, 'btime': 177260, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:43,421 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:20:43,422 lib.lichess_bot (lichess_bot.py:818) INFO move: 3
+2025-05-29 19:20:43,423 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 178989 btime 177260 for game Cn066UHU
+2025-05-29 19:20:44,394 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:20:44,684 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/f1b5?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:20:44,688 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5', 'wtime': 181960, 'btime': 177260, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:46,516 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6', 'wtime': 181960, 'btime': 177730, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:46,519 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:20:46,523 lib.lichess_bot (lichess_bot.py:818) INFO move: 4
+2025-05-29 19:20:46,539 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 179939 btime 177730 for game Cn066UHU
+2025-05-29 19:20:47,424 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:20:47,611 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/b5a4?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:20:47,623 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4', 'wtime': 182730, 'btime': 177730, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:49,494 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5', 'wtime': 182730, 'btime': 178140, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:49,496 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:20:49,500 lib.lichess_bot (lichess_bot.py:818) INFO move: 5
+2025-05-29 19:20:49,509 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 180717 btime 178140 for game Cn066UHU
+2025-05-29 19:20:50,479 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:20:50,789 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/a4b3?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:20:50,792 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3', 'wtime': 183450, 'btime': 178140, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:53,932 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5', 'wtime': 183450, 'btime': 177320, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:53,934 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:20:53,934 lib.lichess_bot (lichess_bot.py:818) INFO move: 6
+2025-05-29 19:20:53,935 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 181449 btime 177320 for game Cn066UHU
+2025-05-29 19:20:54,944 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:20:55,259 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/b3f7?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:20:55,262 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7', 'wtime': 184110, 'btime': 177320, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:58,376 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7', 'wtime': 184110, 'btime': 176500, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:20:58,379 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:20:58,380 lib.lichess_bot (lichess_bot.py:818) INFO move: 7
+2025-05-29 19:20:58,381 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 182108 btime 176500 for game Cn066UHU
+2025-05-29 19:21:06,185 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:21:06,187 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:21:07,349 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/f3e5?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:21:07,352 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5', 'wtime': 177180, 'btime': 176500, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:21:15,506 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8', 'wtime': 177180, 'btime': 170570, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:21:15,510 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:21:15,511 lib.lichess_bot (lichess_bot.py:818) INFO move: 8
+2025-05-29 19:21:15,511 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 175178 btime 170570 for game Cn066UHU
+2025-05-29 19:21:35,077 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:21:35,080 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:21:36,016 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/d1h5?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:21:36,019 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5', 'wtime': 158590, 'btime': 170570, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:21:40,726 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7', 'wtime': 158590, 'btime': 168260, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:21:40,730 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:21:40,731 lib.lichess_bot (lichess_bot.py:818) INFO move: 9
+2025-05-29 19:21:40,732 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 156588 btime 168260 for game Cn066UHU
+2025-05-29 19:21:48,062 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:21:48,065 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:21:48,823 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/e5g6?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:21:48,826 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6', 'wtime': 152440, 'btime': 168260, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:21:59,611 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6', 'wtime': 152440, 'btime': 159630, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:21:59,616 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:21:59,618 lib.lichess_bot (lichess_bot.py:818) INFO move: 10
+2025-05-29 19:21:59,619 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 150436 btime 159630 for game Cn066UHU
+2025-05-29 19:22:07,411 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:22:07,414 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:22:08,087 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/h5h8?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:22:08,096 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8', 'wtime': 146060, 'btime': 159630, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:22:09,218 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6', 'wtime': 146060, 'btime': 161150, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:22:09,221 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:22:09,222 lib.lichess_bot (lichess_bot.py:818) INFO move: 11
+2025-05-29 19:22:09,223 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 144058 btime 161150 for game Cn066UHU
+2025-05-29 19:22:19,884 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:22:19,886 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:22:20,826 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/d2d4?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:22:20,833 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4', 'wtime': 135860, 'btime': 161150, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:22:23,534 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7', 'wtime': 135860, 'btime': 160500, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:22:23,537 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:22:23,537 lib.lichess_bot (lichess_bot.py:818) INFO move: 12
+2025-05-29 19:22:23,538 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 133859 btime 160500 for game Cn066UHU
+2025-05-29 19:22:32,020 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:22:32,022 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:22:33,218 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/b1c3?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:22:33,221 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3', 'wtime': 128680, 'btime': 160500, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:22:34,705 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7', 'wtime': 128680, 'btime': 161070, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:22:34,708 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:22:34,709 lib.lichess_bot (lichess_bot.py:818) INFO move: 13
+2025-05-29 19:22:34,710 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 126678 btime 161070 for game Cn066UHU
+2025-05-29 19:23:08,122 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:23:08,125 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:23:09,205 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/c1h6?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:23:09,209 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6', 'wtime': 96660, 'btime': 161070, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:23:23,540 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6', 'wtime': 96660, 'btime': 149260, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:23:23,542 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:23:23,543 lib.lichess_bot (lichess_bot.py:818) INFO move: 14
+2025-05-29 19:23:23,543 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 94659 btime 149260 for game Cn066UHU
+2025-05-29 19:23:29,456 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:23:29,459 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:23:30,193 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/e1g1?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:23:30,196 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1', 'wtime': 91530, 'btime': 149260, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:23:32,591 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6', 'wtime': 91530, 'btime': 149010, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:23:32,595 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:23:32,596 lib.lichess_bot (lichess_bot.py:818) INFO move: 15
+2025-05-29 19:23:32,597 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 89528 btime 149010 for game Cn066UHU
+2025-05-29 19:23:38,995 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:23:39,060 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/b2b4?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:23:39,063 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4', 'wtime': 86980, 'btime': 149010, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:23:41,112 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4', 'wtime': 86980, 'btime': 149050, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:23:41,117 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:23:41,118 lib.lichess_bot (lichess_bot.py:818) INFO move: 16
+2025-05-29 19:23:41,119 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 84978 btime 149050 for game Cn066UHU
+2025-05-29 19:23:47,874 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:23:47,939 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/d4d5?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:23:47,943 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5', 'wtime': 82120, 'btime': 149050, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:24:07,569 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5', 'wtime': 82120, 'btime': 132020, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:24:07,575 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:24:07,579 lib.lichess_bot (lichess_bot.py:818) INFO move: 17
+2025-05-29 19:24:07,592 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 80103 btime 132020 for game Cn066UHU
+2025-05-29 19:24:13,238 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:24:13,240 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:24:13,872 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/f2f4?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:24:13,875 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4', 'wtime': 77510, 'btime': 132020, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:24:29,227 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4', 'wtime': 77510, 'btime': 118930, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:24:29,232 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:24:29,233 lib.lichess_bot (lichess_bot.py:818) INFO move: 18
+2025-05-29 19:24:29,234 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 75508 btime 118930 for game Cn066UHU
+2025-05-29 19:24:34,835 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:24:34,838 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:24:35,512 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/h2h3?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:24:35,514 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3', 'wtime': 73160, 'btime': 118930, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:24:41,667 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3', 'wtime': 73160, 'btime': 115290, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:24:41,672 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:24:41,673 lib.lichess_bot (lichess_bot.py:818) INFO move: 19
+2025-05-29 19:24:41,674 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 71158 btime 115290 for game Cn066UHU
+2025-05-29 19:24:47,207 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:24:47,208 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:24:48,228 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/f1f3?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:24:48,232 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3', 'wtime': 68280, 'btime': 115290, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:24:55,640 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4', 'wtime': 68280, 'btime': 110800, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:24:55,648 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:24:55,661 lib.lichess_bot (lichess_bot.py:818) INFO move: 20
+2025-05-29 19:24:55,662 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 66265 btime 110800 for game Cn066UHU
+2025-05-29 19:25:01,849 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:25:01,851 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:25:02,845 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/e4e5?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:25:02,850 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5', 'wtime': 63210, 'btime': 110800, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:25:12,616 lib.lichess_bot (lichess_bot.py:447) DEBUG Event: {'type': 'correspondence_ping'}
+2025-05-29 19:26:00,817 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5 f8g7', 'wtime': 63210, 'btime': 54900, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:26:00,822 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:26:00,823 lib.lichess_bot (lichess_bot.py:818) INFO move: 21
+2025-05-29 19:26:00,824 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 61208 btime 54900 for game Cn066UHU
+2025-05-29 19:26:11,645 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:26:11,647 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:26:13,062 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/e5e6?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:26:13,065 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5 f8g7 e5e6', 'wtime': 53340, 'btime': 54900, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:26:14,958 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5 f8g7 e5e6 f7f6', 'wtime': 53340, 'btime': 55380, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:26:14,967 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:26:14,980 lib.lichess_bot (lichess_bot.py:818) INFO move: 22
+2025-05-29 19:26:14,981 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 51326 btime 55380 for game Cn066UHU
+2025-05-29 19:26:23,157 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:26:23,159 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:26:24,354 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/c3e4?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:26:24,376 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5 f8g7 e5e6 f7f6 c3e4', 'wtime': 45660, 'btime': 55380, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:26:51,568 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5 f8g7 e5e6 f7f6 c3e4 f6f5', 'wtime': 45660, 'btime': 30210, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:26:51,573 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:26:51,574 lib.lichess_bot (lichess_bot.py:818) INFO move: 23
+2025-05-29 19:26:51,575 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 43658 btime 30210 for game Cn066UHU
+2025-05-29 19:27:03,228 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:27:03,230 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:27:04,624 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/h8g7?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:27:04,633 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5 f8g7 e5e6 f7f6 c3e4 f6f5 h8g7', 'wtime': 34950, 'btime': 30210, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:27:13,272 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5 f8g7 e5e6 f7f6 c3e4 f6f5 h8g7 f5e4', 'wtime': 34950, 'btime': 23780, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:27:13,276 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:27:13,276 lib.lichess_bot (lichess_bot.py:818) INFO move: 24
+2025-05-29 19:27:13,277 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 32949 btime 23780 for game Cn066UHU
+2025-05-29 19:27:37,870 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:27:37,872 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:27:38,417 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/a1d1?offeringDraw=false HTTP/1.1" 200 11
+2025-05-29 19:27:38,422 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5 f8g7 e5e6 f7f6 c3e4 f6f5 h8g7 f5e4 a1d1', 'wtime': 11770, 'btime': 23780, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:27:57,915 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5 f8g7 e5e6 f7f6 c3e4 f6f5 h8g7 f5e4 a1d1 c4e3', 'wtime': 11770, 'btime': 6390, 'winc': 2000, 'binc': 2000, 'status': 'started'}
+2025-05-29 19:27:57,921 lib.lichess_bot (lichess_bot.py:817) INFO 
+2025-05-29 19:27:57,922 lib.lichess_bot (lichess_bot.py:818) INFO move: 25
+2025-05-29 19:27:57,922 lib.engine_wrapper (engine_wrapper.py:722) INFO Searching for wtime 9769 btime 6390 for game Cn066UHU
+2025-05-29 19:28:12,929 lib.lichess_bot (lichess_bot.py:447) DEBUG Event: {'type': 'gameFinish', 'game': {'fullId': 'Cn066UHUqRtW', 'gameId': 'Cn066UHU', 'fen': 'r7/1bp3Q1/p2pP1pp/1p1P4/1P2kP1q/4nR1P/P1P3P1/3R2K1 w - - 2 25', 'color': 'white', 'lastMove': 'c4e3', 'source': 'friend', 'status': {'id': 35, 'name': 'outoftime'}, 'variant': {'key': 'standard', 'name': 'Standard'}, 'speed': 'blitz', 'perf': 'blitz', 'rated': False, 'hasMoved': True, 'opponent': {'id': 'el_macho', 'username': 'El_Macho', 'rating': 1682}, 'isMyTurn': False, 'secondsLeft': 0, 'winner': 'black', 'compat': {'bot': True, 'board': True}, 'id': 'Cn066UHU'}}
+2025-05-29 19:28:25,620 lib.engine_wrapper (engine_wrapper.py:332) INFO Source: Engine
+2025-05-29 19:28:25,622 urllib3.connectionpool (connectionpool.py:289) DEBUG Resetting dropped connection: lichess.org
+2025-05-29 19:28:26,406 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/move/g7d4?offeringDraw=false HTTP/1.1" 400 47
+2025-05-29 19:28:26,418 lib.lichess_bot (lichess_bot.py:826) DEBUG Game state: {'type': 'gameState', 'moves': 'e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7 e8f7 f3e5 f7e8 d1h5 e8e7 e5g6 h7g6 h5h8 g8h6 d2d4 e7f7 b1c3 c8b7 c1h6 g7h6 e1g1 d7d6 b2b4 a5c4 d4d5 d8g5 f2f4 g5g4 h2h3 g4g3 f1f3 g3h4 e4e5 f8g7 e5e6 f7f6 c3e4 f6f5 h8g7 f5e4 a1d1 c4e3', 'wtime': 0, 'btime': 6390, 'winc': 2000, 'binc': 2000, 'status': 'outoftime', 'winner': 'black'}
+2025-05-29 19:28:26,423 lib.lichess_bot (lichess_bot.py:928) INFO El_Macho won!
+2025-05-29 19:28:26,424 lib.lichess_bot (lichess_bot.py:950) INFO el_macho_bot forfeited on time.
+2025-05-29 19:28:26,426 lib.conversation (conversation.py:99) INFO *** https://lichess.org/Cn066UHU/white [player] el_macho_bot: Good game!
+2025-05-29 19:28:26,625 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/chat HTTP/1.1" 200 11
+2025-05-29 19:28:26,627 lib.conversation (conversation.py:99) INFO *** https://lichess.org/Cn066UHU/white [spectator] el_macho_bot: Thanks for watching!
+2025-05-29 19:28:26,681 urllib3.connectionpool (connectionpool.py:544) DEBUG https://lichess.org:443 "POST /api/bot/game/Cn066UHU/chat HTTP/1.1" 200 11
+2025-05-29 19:28:26,685 lib.lichess_bot (lichess_bot.py:901) INFO --- https://lichess.org/Cn066UHU/white Game over
+2025-05-29 19:28:26,691 lib.lichess_bot (lichess_bot.py:447) DEBUG Event: {'type': 'local_game_done', 'game': {'id': 'Cn066UHU'}}
+2025-05-29 19:28:26,694 lib.lichess_bot (lichess_bot.py:320) INFO +++ Process Freed. Count: 0. IDs: None
