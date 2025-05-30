@@ -55,7 +55,7 @@ def play_opening(board):
 
     chess_openings = []
     # Второй датасет с дебютами
-    with open(r"C:\Users\nikan\Desktop\Chess_bot\lichess-bot\engines\bot\high_elo_opening_result.txt", "r") as g:
+    with open(r"C:\Users\nikan\Desktop\Chess_bot\lichess-bot\engines\bot\openings.txt", "r") as g:
         for i in g.readlines():
             chess_openings.append(i)
 
